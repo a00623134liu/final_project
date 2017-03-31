@@ -4,15 +4,15 @@ body,html{
 	height:100%;
 	position:relative;
 	min-width:1000px;
-	background-color:gray;
-}
-
-header{
 	background-image:url("../image/banner_bg.jpg");
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-size:cover;
 	background-position:center;
+}
+
+header{
+	background-color:transparent;
 	padding:30px;
 	display:flex;
 	position:absolute;
@@ -178,7 +178,11 @@ footer a{
 	width:1000px;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:650px;
+	margin-top:660px;
+}
+
+#bg_cover{
+	background-color:rgba(185,187,232,.7);
 }
 
 #main_nav{
