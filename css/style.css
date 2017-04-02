@@ -2,8 +2,11 @@
 
 body,html{
 	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
 	position:relative;
-	min-width:1000px;
 	background-image:url("../image/banner_bg.jpg");
 	background-repeat:no-repeat;
 	background-attachment:fixed;
@@ -47,6 +50,10 @@ li{
 	font-size:90%;
 }
 
+ul > li > ul{
+	list-style:circle;
+}
+
 h1{
 	color:#16448e;
 	margin-top:60px;
@@ -55,12 +62,22 @@ h1{
 }
 
 div[id="wrap"] h2{
-	background-color:#ffe058;
+	background-color:#6d68ff;
+	color:white;
 	padding:5px;
 }
 
 h3{
+	padding:5px;
+}
+
+header h3{
+	background-color:transparent;
+}
+
+h4{
 	padding:0 5px;
+	font-size:90%;
 }
 
 p{
@@ -94,11 +111,22 @@ figcaption{
 
 a{
 	text-decoration:none;
-	color:#f48942;
+	color:#cc5714;
 }
 
 a:hover{
-	color:red;
+	color:#eda276;
+}
+
+#description a{
+	display:block;
+	padding:5px;
+	font-weight:bold;
+}
+
+#description a:hover{
+	background-color:black;
+	color:white;
 }
 
 #main_nav a{
@@ -146,7 +174,7 @@ footer a{
 
 .top_button a{
 	display:block;
-	background-color:#6d68ff;
+	background-color:#ad161e;
 	color:white;
 	width:50px;
 	padding:5px;
@@ -176,9 +204,9 @@ footer a{
 
 #wrap{
 	width:1000px;
+	margin-top:690px;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:660px;
 }
 
 #bg_cover{
@@ -209,7 +237,7 @@ footer a{
 #course_title{
 	width:300px;
 	margin:100px 0px 0px 100px;
-	background-color:rgba(255,224,88,.8);
+	background-color:rgb(255,224,88);
 	height:300px;
 	padding:0 30px;
 }
@@ -222,13 +250,21 @@ footer a{
 	background-color:transparent;
 }
 
+#ftp_server{
+	margin:0;
+}
+
+#homework_link{
+	margin-bottom:40px;
+}
+
 /** Attribute selector **/
 
 span{
 	color:red;
 }
 
-header > div > h2{
+#course_title h2{
 	margin-top:-20px;
 	color:#256bdb;
 	background-color:transparent;
@@ -242,6 +278,7 @@ header img{
 	left:130px;
 	top:-30px;
 }
+
 a[href="#"]{
 	pointer-events:none;
 }
@@ -270,4 +307,5 @@ footer li{
 	padding:2px 15px 5px 15px;
 	background-color:rgba(73,74,76,.8);
 	color:white;
+	border:none;
 }
